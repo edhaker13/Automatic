@@ -121,9 +121,10 @@ statefile = "~/.config/automatic.state"
 #
 # You can use capture groups to capture parts of the item to be reused
 # And you can insert the captured groups in the folder parameter
-# filter = { pattern => "(Some.Show.Namme).*HDTV"
-#            folder => "/your/download/folder/$1"
-#          }
+filter = { pattern => "(Some.Show.Name).*HDTV"
+           folder  => "/your/download/folder/\1"
+           feedid  => 1
+         }
 
 filter = { pattern => "Name.of.Something.I.Want.to.Download.Automatically.*HDTV"
            folder  => "/your/download/folder"
