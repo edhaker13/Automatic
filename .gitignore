@@ -41,3 +41,5 @@ src/tests/regex_test
 src/tests/toasty_test
 src/tests/pushalot_test
 src/tests/*.trs
+
+.vscode/
