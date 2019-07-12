@@ -588,7 +588,7 @@ PRIVATE void processRSSList(auto_handle *session, CURL *curl_session, const simp
   while(current_item && current_item->data) {
     feed_item item = (feed_item)current_item->data;
 
-    if(isMatch(session->filters, item->name, feedID, &download_folder, &filter_pattern)) {
+    if(isMatch(session->filters, item->name, feedID, &download_folder)) {
       if(!session->match_only) {
          if(has_been_downloaded(session->downloads, item)) {
             dbg_printf(P_INFO, "Duplicate torrent: %s", item->name);
